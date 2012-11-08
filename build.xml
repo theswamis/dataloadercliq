@@ -1,0 +1,65 @@
+<project default="build">
+	<property name="base.dir" value="./" />
+	<property name="lib.dir" value="${base.dir}/lib" />
+	<property name="bin.dir" value="${base.dir}/bin" />
+	<property name="src.dir" value="${base.dir}/src" />
+	<property name="out.dir" value="${base.dir}/cliq" />
+
+	<path id="classpath">
+		<pathelement path="${classpath}" />
+		<pathelement location="${lib.dir}/miglayout-3.7.1.jar" />
+		<pathelement location="${lib.dir}/junit-4.10.jar" />
+
+		<!--DataLoader.jar should be in the base directory for the build and for running cliq -->
+		<pathelement location="${base.dir}/DataLoader.jar" />
+	</path>
+
+	<target name="clean">
+		<echo>=== CLEAN ===</echo>
+		<delete failonerror="false" includeEmptyDirs="true">
+			<fileset dir="${bin.dir}" includes="**/*" />
+			<fileset dir="${out.dir}" includes="**/*" />
+			<fileset dir="${base.dir}" includes="**/*zip" />
+		</delete>
+	</target>
+
+	<target name="copy-non-java-files">
+		<copy todir="${bin.dir}" includeemptydirs="false">
+			<fileset dir="${src.dir}" excludes="**/*.java" />
+		</copy>
+	</target>
+
+	<target name="compile" depends="copy-non-java-files">
+	</target>
+
+	<target name="build" depends="compile">
+		<mkdir dir="${out.dir}" />
+		<mkdir dir="${out.dir}/lib" />
+
+		<!--Copy the non-java files to the bin directory before we jar them -->
+		<javac srcdir="${src.dir}" destdir="${bin.dir}" includeantruntime="false" source="1.5" target="1.5">
+			<classpath refid="classpath" />
+		</javac>
+		<jar destfile="${out.dir}/cliq.jar" basedir="${bin.dir}" includes="**/*">
+			<manifest>
+				<attribute name="Main-Class" value="com.salesforce.cliq.DataLoaderCliq" />
+			</manifest>
+		</jar>
+
+		<!--Create a working directory for cliq as a user would see it -->
+		<copy todir="${out.dir}/lib" includeemptydirs="false">
+			<fileset dir="${lib.dir}" includes="**/*" />
+		</copy>
+		<copy todir="${out.dir}" includeemptydirs="false">
+			<filelist dir="${src.dir}" files="cliq.sh,cliq.properties,cliq.bat" />
+		</copy>
+
+		<chmod file="${out.dir}/cliq.sh" perm="700"/>
+	</target>
+
+	<target name="buildZip" depends="build">
+		<zip destfile="${base.dir}/cliq.zip">
+			<fileset dir="${base.dir}" includes="cliq/" />
+		</zip>
+	</target>
+</project>
