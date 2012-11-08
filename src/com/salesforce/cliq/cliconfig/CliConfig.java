@@ -152,6 +152,7 @@ public abstract class CliConfig {
 		/* Set a default Output Directory */
 		OUTPUT_DIR = new File(outputDir);
 		
+		/* The Directory Names need to be Windows Compatible */
 		PROCESS_NAME = name.replaceAll("[\\W|\\d]+","_");				
 		SCRIPT_DIR = new File(OUTPUT_DIR.getAbsolutePath() + "/" + PROCESS_NAME);		
 		WRITE_DIR = new File(SCRIPT_DIR.getAbsolutePath() + "/write");
