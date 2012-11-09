@@ -239,8 +239,8 @@ public abstract class CliConfig {
 				endpoint = value;
 			}
 		} else if (key == Config.PROXY_PASSWORD) {
-			proxyPassword = value;
-			configMap.put(key,value);			
+			proxyPassword = value;  //save the unecrypted value
+			configMap.put(key,encryptPassword(value));	//save encrypted pass to config
 		} else {
 			configMap.put(key,value);
 		}
