@@ -16,9 +16,6 @@ If you had a great experience to share, please [Post a Review](http://developer.
 For general feedback about the application, please
 [Give Feedback](https://spreadsheets.google.com/viewform?key=0AsSsHFCeHI22dE44T3FhOTlFX2dCSzduYWQxa1JNVFE)
 
-For troubleshooting or other technical questions, please start a
-[Discussion](http://groups.google.com/group/data-loader-cliq?pli=1)
-
 Thank you!
 
 ### CLIq 2 Released ###
@@ -28,8 +25,6 @@ Thank you!
   * Uses Data Loader code for Proxy - reliability should be equal to Data Loader with proxy environments
   * Additional parameters in cliq.properties
   * Eliminated unnecessary libraries - new download is much smaller
-
-Please [Start a Discussion](http://groups.google.com/group/data-loader-cliq) if you run into any problems.  Thanks!
 
 ### What Others are Saying ###
 > "I just wanted to take a moment to let you know how much I appreciated CLIq.  Had no idea what to do... would have taken me forever to do manually what CLIq does in minutes. Thank you very much for writing the code!!!!" - Michael H.
@@ -42,11 +37,9 @@ Had a great experience too?  You can leave a rating and comment on the Force.com
 [CLIq Reviews](http://developer.force.com/codeshare/apex/ProjectPage?id=a0630000005BBjnAAG)
 
 ### Take Action ###
-  * [Download](http://code.google.com/p/dataloadercliq/downloads/list)
-  * [Get Started](http://code.google.com/p/dataloadercliq/wiki/Installation)
-  * [Discuss](http://groups.google.com/group/data-loader-cliq?pli=1)
+  * [Download](https://github.com/theswamis/dataloadercliq/releases)
+  * [Get Started](https://github.com/theswamis/dataloadercliq/wiki/Installation)
   * [Give Feedback](https://spreadsheets.google.com/viewform?key=0AsSsHFCeHI22dE44T3FhOTlFX2dCSzduYWQxa1JNVFE)
-  * **[Post a Review](http://developer.force.com/codeshare/apex/ProjectPage?id=a0630000005BBjnAAG)**
 
 ## Overview ##
 **CLIq provides a _simple wizard_ to create directory structures and configuration files for the Salesforce Data Loader Command Line Interface.**  You can spend hours configuring the CLI manually, or use CLIq and you will have a working configuration in less than **5 minutes**.
@@ -81,12 +74,6 @@ After creating a CLIq configuration, you can reference the Data Loader documenta
 **If you experience any problems using CLIq, please let me know! I'm glad to help, and every interaction helps make the product better!**
   * For questions about using or troubleshooting CLIq, please post your question to the [Google Group](http://groups.google.com/group/data-loader-cliq)
   * _**After using CLIq, please take a minute to give your feedback**_ with a [Quick Survey](https://spreadsheets.google.com/viewform?key=0AsSsHFCeHI22dE44T3FhOTlFX2dCSzduYWQxa1JNVFE)
-
-## Installing ##
-See the [Installation](Installation.md) instructions.
-
-## Using CLIq ##
-See [UsingCLIq](UsingCLIq.md) for usage instructions.
 
 ## Support ##
 This project is maintained and supported by the community.  Salesforce.com does not provide support for CLIq.
