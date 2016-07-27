@@ -2,9 +2,8 @@
 The Salesforce Data Loader Command Line Interface (CLI) is a powerful tool for automating business processes, and integrating Salesforce with other systems.  However, configuring the CLI is daunting, especially for first-time users.  CLI quickstart (CLIq) is the solution!
 
 # Important #
-There is an issue with Data Loader 24.0 on Windows with CLIq 2.1.1.
-
-2.2.0 should resolve those problems.
+Go to this link to download the latest version:
+https://github.com/theswamis/dataloadercliq/releases/tag/2.3.0
 
 ### Please Provide Feedback! ###
 I would love to know about your experience - good or bad!  All of your feedback helps me know what is important to enhance and fix.
