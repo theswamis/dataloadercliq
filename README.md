@@ -5,6 +5,9 @@ The Salesforce Data Loader Command Line Interface (CLI) is a powerful tool for a
 Go to this link to download the latest version:
 https://github.com/theswamis/dataloadercliq/releases/tag/2.3.0
 
+LATEST INSTALLATION INSTRUCTIONS
+https://github.com/theswamis/dataloadercliq/wiki/Installation
+
 ### Please Provide Feedback! ###
 I would love to know about your experience - good or bad!  All of your feedback helps me know what is important to enhance and fix.
 
