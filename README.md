@@ -81,4 +81,4 @@ This project is maintained and supported by the community.  Salesforce.com does 
 If you find a bug, please create an Issue.
 If you had a great experience, please let me know!
 
-If you want to reach me, my email is vijay.swamidass(@)gmail.com.  Please use the Google Group for technical questions about CLIq.  Thanks!
+If you want to reach me, my email is vijay.swamidass(@)gmail.com.  If you find a bug, go ahead and create an issue.  Thanks!
